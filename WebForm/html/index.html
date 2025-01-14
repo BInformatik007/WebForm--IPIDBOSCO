@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/font.css">
+    <title>IPIDBOSCO Form</title>
+</head>
+<body>
+    <!-- -- --------------- LAYOUT SECTION START --------------- -- -->
+
+    <section class="layout-section" id="home">
+        <div class="layout-img-container">
+            <!-- Imagen importada por CSS -->
+        </div>
+        <div class="layout-text-container">
+            <P class="layout-text big-text">¡ÚNETENOS YA!</P>
+            <P class="layout-text small-text">Y sé un buen cristiano y honrado ciudadano</P>
+        </div>
+        <span id="main-title"></span>
+        <div class="down-row">
+            <a href="#main-title" class="down-row-link"><i class='bx bx-chevron-down'></i></a>
+        </div>
+    </section>
+
+    <!-- -- --------------- LAYOUT SECTION END --------------- -- -->
+
+    <!-- -- --------------- MAIN SECTION START --------------- -- -->
+
+    <section class="main-section sections">
+        <main class="main">
+            <h3 class="main-title">Únete en tres pasos</h3>
+            <div class="steps-container">
+
+                <div class="eachstep step1">
+                    <img src="/media/img/registration-icon.png" alt="">
+                    <h4 class="step-title">1. Completa</h4>
+                    <p class="step-text">Proporciona la información necesaria para tu solicitud de inscripción.</p>
+                </div>
+
+                <div class="eachstep step2">
+                    <img src="/media/img/login-icon.png" alt="">
+                    <h4 class="step-title">2. Envía</h4>
+                    <p class="step-text">Envía tu solicitud revisada y asegúrate de que todos los campos estén completos.</p>
+                </div>
+
+                <div class="eachstep step3">
+                    <img src="/media/img/complete-form-icon.png" alt="">
+                    <h4 class="step-title">3. Espera</h4>
+                    <p class="step-text">Nuestro equipo revisará tu solicitud y se pondrá en contacto contigo pronto.</p>
+                </div>
+
+            </div>
+            <button type="button" class="register-btn-link">
+                <a href="#form" class="login-btn-link">¡Comienza con el primer paso!</a>
+            </button>
+        </main>
+    </section>
+
+    <!-- -- --------------- MAIN SECTION END --------------- -- -->
+
+    <!-- -- --------------- FORM SECTION START --------------- -- -->
+
+    <section class="form-section sections" id="form">
+        <form action="" class="form">
+
+            <div class="form-header-section">
+                <h2 class="form-header-title">Formulario de Inscripción IPIDBOSCO</h2>
+                <p class="form-header-text">Formulario destinado a la inscripción de nuevos estudiantes al Instituto Politécnico Industrial Don Bosco.</p>
+            </div>
+
+            <div class="form-group personal-group">
+                <h3 class="form-group-title">Datos Personales del Estudiante</h3>
+
+                <div class="form-input-container">
+                    <label for="student-name" class="form-label">Nombre(s):<span class="form-span"> *</span></label>
+                    <input type="text" id="student-name" name="student-name" class="form-input" required>
+                </div>
+
+                <div class="form-input-container">
+                    <label for="student-last-name" class="form-label">Apellidos:<span class="form-span"> *</span></label>
+                    <input type="text" id="student-last-name" name="student-last-name" class="form-input" required>
+                </div>
+
+                <div class="form-input-container gender-container">
+                    <label for="gender" class="form-label">Género:<span class="form-span"> *</span></label><br>
+                    <input type="radio" class="radio-gender" id="masculino" name="gender" value="masculino" required>
+                    <label for="masculino">Masculino</label><br>
+                    <input type="radio" class="radio-gender" id="femenino" name="gender" value="femenino" required>
+                    <label for="femenino">Femenino</label>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-age" class="form-label">Edad:<span class="form-span"> *</span></label>
+                    <input type="number" id="student-age" name="student-age" class="form-input" required min="13" max="14">
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-direction" class="form-label">Dirección actual:<span class="form-span"> *</span></label>
+                    <input type="text" id="student-direction" name="student-direction" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-direction2" class="form-label">Municipio:<span class="form-span"> *</span></label>
+                    <input type="text" id="student-direction2" name="student-direction2" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-direction3" class="form-label">Provincia:<span class="form-span"> *</span></label>
+                    <select id="student-direction3" name="student-direction3" class="form-input" required>
+                        <option value="">Selecciona una provincia</option>
+                        <option value="Azua">Azua</option>
+                        <option value="Baoruco">Baoruco</option>
+                        <option value="Barahona">Barahona</option>
+                        <option value="Dajabón">Dajabón</option>
+                        <option value="Distrito Nacional">Distrito Nacional</option>
+                        <option value="Duarte">Duarte</option>
+                        <option value="El Seibo">El Seibo</option>
+                        <option value="Espaillat">Espaillat</option>
+                        <option value="Independencia">Independencia</option>
+                        <option value="La Altagracia">La Altagracia</option>
+                        <option value="La Romana">La Romana</option>
+                        <option value="La Vega">La Vega</option>
+                        <option value="María Trinidad Sánchez">María Trinidad Sánchez</option>
+                        <option value="Monseñor Nouel">Monseñor Nouel</option>
+                        <option value="Monte Cristi">Monte Cristi</option>
+                        <option value="Monte Plata">Monte Plata</option>
+                        <option value="Pedernales">Pedernales</option>
+                        <option value="Peravia">Peravia</option>
+                        <option value="Puerto Plata">Puerto Plata</option>
+                        <option value="Salcedo">Salcedo</option>
+                        <option value="San Cristóbal">San Cristóbal</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Pedro de Macorís">San Pedro de Macorís</option>
+                        <option value="Samaná">Samaná</option>
+                        <option value="Santiago">Santiago</option>
+                        <option value="Santiago Rodríguez">Santiago Rodríguez</option>
+                        <option value="Sancti Spíritus">Sancti Spíritus</option>
+                        <option value="Santo Domingo">Santo Domingo</option>
+                        <option value="Valverde">Valverde</option>
+                        <option value="Monte Plata">Monte Plata</option>
+                        <option value="Hato Mayor">Hato Mayor</option>
+                        <option value="La Romana">La Romana</option>
+                    </select>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-home-phonenumber" class="form-label">Teléfono residencial:<span class="form-span"> *</span></label>
+                    <input type="tel" id="student-home-phonenumber" name="student-home-phonenumber" class="form-input" placeholder="(000) 000 - 0000" required oninput="formatPhoneNumber(this)">
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-birth" class="form-label">Fecha de nacimiento:<span class="form-span"> *</span></label>
+                    <input type="date" id="student-birth" name="student-birth" class="form-input" required>
+                </div>
+                
+                <h4 class="form-group-subtitle">Acta de Nacimiento</h4>
+                
+                <div class="form-input-container">
+                    <label for="student-book" class="form-label">Libro:<span class="form-span"> *</span></label>
+                    <input type="number" id="student-book" name="student-book" class="form-input" min="0" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-leaf" class="form-label">Folio:<span class="form-span"> *</span></label>
+                    <input type="number" id="student-leaf" name="student-leaf" class="form-input" min="0" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-no" class="form-label">No.:<span class="form-span"> *</span></label>
+                    <input type="number" id="student-no" name="student-no" class="form-input" min="0" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-year" class="form-label">Año:<span class="form-span"> *</span></label>
+                    <input type="date" id="student-year" name="student-year" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-origin" class="form-label">Escuela de procedencia:<span class="form-span"> *</span></label>
+                    <input type="text" id="student-origin" name="student-origin" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-degree" class="form-label">Grado:<span class="form-span"> *</span></label>
+                    <input type="text" id="student-degree" name="student-degree" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-type-blood" class="form-label">Tipo de sangre:<span class="form-span"> *</span></label>
+                    <select id="student-type-blood" name="student-type-blood" class="form-input" required>
+                        <option value="">Selecciona tu tipo de sangre</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                    </select>
+                </div>                
+                
+                <div class="form-input-container">
+                    <label for="student-religion" class="form-label">Religión:<span class="form-span"> *</span></label>
+                    <input type="text" id="student-religion" name="student-religion" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-sacraments" class="form-label">¿Cuáles sacramentos ha recibido?<span class="form-span"> *</span></label>
+                    
+                    <div class="checkbox-student-sacraments-container">
+                        <label><input type="checkbox" name="student-sacraments" value="Bautismo" class="checkbox-student-sacraments checkbox"> Bautismo</label><br>
+                        <label><input type="checkbox" name="student-sacraments" value="Primera Comunión" class="checkbox-student-sacraments checkbox"> Primera Comunión</label><br>
+                        <label><input type="checkbox" name="student-sacraments" value="Confirmación" class="checkbox-student-sacraments checkbox"> Confirmación</label><br>
+                        <label><input type="checkbox" name="student-sacraments" value="Ninguno" class="checkbox-student-sacraments checkbox"> Ninguno</label><br>
+                    </div>
+                </div>
+                
+                
+                
+                <div class="form-input-container">
+                    <label for="student-emergency" class="form-label">En caso de emergencia, comunicarse con:<span class="form-span"> *</span></label>
+                    <input type="text" id="student-emergency" name="student-emergency" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="student-emergency-name" class="form-label">Nombre(s) y apellidos:<span class="form-span"> *</span></label>
+                    <input type="text" id="student-emergency-name" name="student-emergency-name" class="form-input" required>
+                </div>
+
+                <div class="form-input-container">
+                    <label for="student-emergency-phonenumber" class="form-label">Teléfono celular:<span class="form-span"> *</span></label>
+                    <input type="tel" id="student-emergency-phonenumber" name="student-emergency-phonenumber" class="form-input" placeholder="(000) 000 - 0000" required oninput="formatPhoneNumber(this)">
+                </div>
+                
+            </div>
+
+            <div class="form-group familiar-group">
+                <h3 class="form-group-title">Datos Familiares</h3>
+
+                <h4 class="form-group-subtitle">Datos del padre:</h4>
+                
+                <div class="form-input-container">
+                    <label for="parent-name" class="form-label">Nombre(s) y apellidos:<span class="form-span"> *</span></label>
+                    <input type="text" id="parent-name" name="parent-name" class="form-input" required>
+                </div>
+
+                <div class="form-input-container">
+                    <label for="parent-phonenumber" class="form-label">Teléfono celular:<span class="form-span"> *</span></label>
+                    <input type="tel" id="parent-phonenumber" name="parent-phonenumber" class="form-input" placeholder="(000) 000 - 0000" required oninput="formatPhoneNumber(this)">
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="parent-email" class="form-label">Correo electrónico:<span class="form-span"> *</span></label>
+                    <input type="email" id="parent-email" name="parent-email" class="form-input" placeholder="example@example.com" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="parent-DNI" class="form-label">No. de cédula:<span class="form-span"> *</span></label>
+                    <input type="text" id="parent-DNI" name="parent-DNI" class="form-input" placeholder="000-0000000-0" required oninput="formatDNI(this)">
+                </div>                
+                
+                <div class="form-input-container">
+                    <label for="parent-level" class="form-label">Nivel académico:<span class="form-span"> *</span></label>
+                    <select id="parent-level" name="parent-level" class="form-input" required>
+                        <option value="">Selecciona el nivel académico</option>
+                        <option value="Ninguno">Ninguno</option>
+                        <option value="Básica">Básica</option>
+                        <option value="Primaria">Primaria</option>
+                        <option value="Secundaria">Secundario</option>
+                        <option value="Bachillerato">Bachiller</option>
+                        <option value="Universitario">Universitario</option>
+                    </select>
+                </div>
+                
+                
+                <div class="form-input-container">
+                    <label for="parent-work" class="form-label">Lugar donde trabaja:<span class="form-span"> *</span></label>
+                    <input type="text" id="parent-work" name="parent-work" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="parent-ocupation" class="form-label">Ocupación:<span class="form-span"> *</span></label>
+                    <input type="text" id="parent-ocupation" name="parent-ocupation" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="parent-status" class="form-label">Estado civil:<span class="form-span"> *</span></label>
+                    <select id="parent-status" name="parent-status" class="form-input" required>
+                        <option value="">Selecciona tu estado civil</option>
+                        <option value="Soltero">Soltero</option>
+                        <option value="Casado">Casado</option>
+                        <option value="Divorciado">Divorciado</option>
+                        <option value="Viudo">Viudo</option>
+                        <option value="Unión libre">Unión libre</option>
+                    </select>
+                </div>
+                
+                <h4 class="form-group-subtitle">Datos de la madre:</h4>
+                
+                <div class="form-input-container">
+                    <label for="parent-name" class="form-label">Nombre(s) y apellidos:<span class="form-span"> *</span></label>
+                    <input type="text" id="parent-name" name="parent-name" class="form-input" required>
+                </div>
+
+                <div class="form-input-container">
+                    <label for="parent-phonenumber" class="form-label">Teléfono celular:<span class="form-span"> *</span></label>
+                    <input type="tel" id="parent-phonenumber" name="parent-phonenumber" class="form-input" placeholder="(000) 000 - 0000" required oninput="formatPhoneNumber(this)">
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="parent-email" class="form-label">Correo electrónico:<span class="form-span"> *</span></label>
+                    <input type="email" id="parent-email" name="parent-email" class="form-input" placeholder="example@example.com" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="parent-DNI" class="form-label">No. de cédula:<span class="form-span"> *</span></label>
+                    <input type="text" id="parent-DNI" name="parent-DNI" class="form-input" placeholder="000-0000000-0" required oninput="formatDNI(this)">
+                </div>                
+                
+                <div class="form-input-container">
+                    <label for="parent-level" class="form-label">Nivel académico:<span class="form-span"> *</span></label>
+                    <select id="parent-level" name="parent-level" class="form-input" required>
+                        <option value="">Selecciona el nivel académico</option>
+                        <option value="Ninguno">Ninguno</option>
+                        <option value="Básica">Básica</option>
+                        <option value="Primaria">Primaria</option>
+                        <option value="Secundaria">Secundario</option>
+                        <option value="Bachillerato">Bachiller</option>
+                        <option value="Universitario">Universitario</option>
+                    </select>
+                </div>
+                
+                
+                <div class="form-input-container">
+                    <label for="parent-work" class="form-label">Lugar donde trabaja:<span class="form-span"> *</span></label>
+                    <input type="text" id="parent-work" name="parent-work" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="parent-ocupation" class="form-label">Ocupación:<span class="form-span"> *</span></label>
+                    <input type="text" id="parent-ocupation" name="parent-ocupation" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="parent-status" class="form-label">Estado civil:<span class="form-span"> *</span></label>
+                    <select id="parent-status" name="parent-status" class="form-input" required>
+                        <option value="">Selecciona tu estado civil</option>
+                        <option value="Soltero">Soltera</option>
+                        <option value="Casado">Casada</option>
+                        <option value="Divorciado">Divorciada</option>
+                        <option value="Viudo">Viuda</option>
+                        <option value="Unión libre">Unión libre</option>
+                    </select>
+                </div>
+                
+                <h4 class="form-group-subtitle">Datos del tutor:</h4>
+                
+                <div class="form-input-container">
+                    <label for="tutor-name" class="form-label">Nombre de tutor(a):<span class="form-span"> *</span></label>
+                    <input type="text" id="tutor-name" name="tutor-name" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="tutor-kinship" class="form-label">Parentesco:<span class="form-span"> *</span></label>
+                    <input type="text" id="tutor-kinship" name="tutor-kinship" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="parent-DNI" class="form-label">No. de cédula:<span class="form-span"> *</span></label>
+                    <input type="text" id="parent-DNI" name="parent-DNI" class="form-input" placeholder="000-0000000-0" required oninput="formatDNI(this)">
+                </div> 
+                
+                <div class="form-input-container">
+                    <label for="parent-level" class="form-label">Nivel académico:<span class="form-span"> *</span></label>
+                    <select id="parent-level" name="parent-level" class="form-input" required>
+                        <option value="">Selecciona el nivel académico</option>
+                        <option value="Ninguno">Ninguno</option>
+                        <option value="Básica">Básica</option>
+                        <option value="Primaria">Primaria</option>
+                        <option value="Secundaria">Secundario</option>
+                        <option value="Bachillerato">Bachiller</option>
+                        <option value="Universitario">Universitario</option>
+                    </select>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="tutor-work" class="form-label">Lugar donde trabaja:<span class="form-span"> *</span></label>
+                    <input type="text" id="tutor-work" name="tutor-work" class="form-input" required>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="tutor-ocupation" class="form-label">Ocupación:<span class="form-span"> *</span></label>
+                    <input type="text" id="tutor-ocupation" name="tutor-ocupation" class="form-input" required>
+                </div>
+
+                <h4 class="form-group-subtitle">Datos extra:</h4>
+
+                <!-- "ww" significa "How with" que se refiere a con quién vive -->
+                <div class="form-input-container">
+                    <label for="ww" class="form-label">¿Con quién vive actualmente?<span class="form-span"> *</span></label>
+                    <input type="text" id="ww" name="ww" class="form-input" required>
+                </div>
+
+                <!-- "hm" significa "How many" que se refiere a cuántas personas -->
+                <div class="form-input-container">
+                    <label for="hm" class="form-label">Cantidad de hermanos:<span class="form-span"> *</span></label>
+                    <input type="number" id="hm" name="hm" class="form-input" min="0" required>
+                </div>
+
+                <!-- "hm-study" significa "How many study" que se refiere a la cantidad de hermanos que estudian en el centro -->
+                <div class="form-input-container">
+                    <label for="hm-study" class="form-label">Cantidad de hermanos que estudian en el centro (En caso de NO poseer a ningún hermano en la institución, responder "N/A".):<span class="form-span"> *</span></label>
+                    <input type="text" id="hm-study" name="hm-study" class="form-input" required>
+                </div>
+
+                <div class="form-input-container">
+                    <label for="bro-name" class="form-label">Nombre(s) y apellidos (En caso de NO poseer a ningún hermano en la institución, responder "N/A".):<span class="form-span"> *</span></label>
+                    <input type="text" id="bro-name" name="bro-name" class="form-input" required>
+                </div>
+
+                <div class="form-input-container">
+                    <label for="bro-grade" class="form-label">Grado (En caso de NO poseer a ningún hermano en la institución, responder "N/A".):<span class="form-span"> *</span></label>
+                    <input type="text" id="bro-grade" name="bro-grade" class="form-input" required>
+                </div>
+
+            </div>
+
+            <div class="form-group medic-group">
+                <h3 class="form-group-title">Datos Médicos del Estudiante</h3>
+
+                <div class="form-input-container Vaccines-day-container">
+                    <label for="Vaccines-day" class="form-label">¿Esquema de vacunas al día?<span class="form-span"> *</span></label><br>
+                    <label><input type="radio" class="radio-Vaccines-day radio-up" id="Vaccines-day" name="Vaccines-day" value="Sí" required> Sí</label><br>
+                    <label><input type="radio" class="radio-Vaccines-day radio-down" id="Vaccines-day" name="Vaccines-day" value="No" required> No</label>
+                </div>
+                
+                <div class="form-input-container medic-is-container">
+                    <label for="medic-is" class="form-label">¿Está tomando medicamentos?<span class="form-span"> *</span></label><br>
+                    <label><input type="radio" class="radio-medic-is radio-up" id="medic-is" name="medic-is" value="Sí" required> Sí</label><br>
+                    <label><input type="radio" class="radio-medic-is radio-down" id="medic-is" name="medic-is" value="No" required> No</label>
+                </div>
+                
+                <!-- "w" significa "Wich" que se refiere a cuál -->
+                <div class="form-input-container">
+                    <label for="w-one" class="form-label">¿Cuál(es) medicamentos? (En caso de NO tomar ningún medicamento, responder "N/A".):<span class="form-span"> *</span></label>
+                    <input type="text" id="w-one" name="w-one" class="form-input" required>
+                </div>
+
+                <div class="form-input-container medic-is-container">
+                    <label for="Allergic-is" class="form-label">¿Es alérgico a algún medicamento?<span class="form-span"> *</span></label><br>
+                    <label><input type="radio" class="radio-Allergic-is radio-up" id="Allergic-is" name="Allergic-is" value="Sí" required> Sí</label><br>
+                    <label><input type="radio" class="radio-Allergic-is radio-down" id="Allergic-is" name="Allergic-is" value="No" required> No</label>
+                </div>  
+                
+                <div class="form-input-container">
+                    <label for="w-one1" class="form-label">¿Cuál(es) medicamento(s)?  (En caso de NO ser alérgico a ningún medicamento, responder "N/A".):<span class="form-span"> *</span></label>
+                    <input type="text" id="w-one1" name="w-one1" class="form-input" required>
+                </div>
+
+                <div class="form-input-container medic-is-container">
+                    <label for="illness-is" class="form-label">¿Padece alguna enfermedad?<span class="form-span"> *</span></label><br>
+                    <label><input type="radio" class="radio-illness-is radio-up" id="illness-is" name="illness-is" value="Sí" required> Sí</label><br>
+                    <label><input type="radio" class="radio-illness-is radio-down" id="illness-is" name="illness-is" value="No" required> No</label>
+                </div> 
+                
+                <div class="form-input-container">
+                    <label for="w-one2" class="form-label">¿Cuál(es) enfermedad(es)?  (En caso de NO padecer ninguna enfermedad, responder "N/A".):<span class="form-span"> *</span></label>
+                    <input type="text" id="w-one2" name="w-one2" class="form-input" required>
+                </div>                
+                
+            </div>
+
+            <div class="form-group social-group">
+                <h3 class="form-group-title">Programa Social</h3>
+
+                <div class="form-input-container medic-is-container">
+                    <label for="solidarity-card-is" class="form-label">¿La familia posee tarjeta de solidaridad?<span class="form-span"> *</span></label><br>
+                    <label><input type="radio" class="radio-solidarity-card-is radio-up" id="solidarity-card-is" name="solidarity-card-is" value="Sí" required> Sí</label><br>
+                    <label><input type="radio" class="radio-solidarity-card-is radio-down" id="solidarity-card-is" name="solidarity-card-is" value="No" required> No</label>
+                </div> 
+                
+                <div class="form-input-container">
+                    <label for="solidarity-card-number" class="form-label">No. de tarjeta de solidaridad (En caso de NO poseer ninguna, responder "N/A".):<span class="form-span"> *</span></label>
+                    <input type="text" id="solidarity-card-number" name="solidarity-card-number" class="form-input" required>
+                </div>
+
+                <div class="form-input-container medic-is-container">
+                    <label for="school-voucher-is" class="form-label">¿Posee Bono Escolar Estudiante Progreso (BEEP)?<span class="form-span"> *</span></label><br>
+                    <label><input type="radio" class="radio-school-voucher-is radio-up" id="school-voucher-is" name="school-voucher-is" value="Sí" required> Sí</label><br>
+                    <label><input type="radio" class="radio-school-voucher-is radio-down" id="school-voucher-is" name="school-voucher-is" value="No" required> No</label>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="school-incentive" class="form-label">Incentivo a la Asistencia Escolar (ILAE):<span class="form-span"> *</span></label>
+                    <input type="number" id="school-incentive" name="school-incentive" class="form-input" min="0" step="10" required>
+                </div>                
+                
+            </div>
+
+            <div class="form-group reasons-group">
+                <h3 class="form-group-title">Razones que motivan su solicitud</h3>
+
+                <div class="form-input-container">
+                    <label for="group-reasons" class="form-label">Seleccionar al menos 3 razones que motivan su solicitud:<span class="form-span"> *</span></label>
+                    <div class="checkbox-group-reasons-container">
+                        <label><input type="checkbox" name="group-reasons" class="checkbox-group-reasons checkbox" value="Prestigio"> Prestigio</label><br>
+                        <label><input type="checkbox" name="group-reasons" class="checkbox-group-reasons checkbox" value="Formación Cristiana"> Formación Cristiana</label><br>
+                        <label><input type="checkbox" name="group-reasons" class="checkbox-group-reasons checkbox" value="Orden y disciplina"> Orden y disciplina</label><br>
+                        <label><input type="checkbox" name="group-reasons" class="checkbox-group-reasons checkbox" value="Cercanía a la escuela"> Cercanía a la escuela</label><br>
+                        <label><input type="checkbox" name="group-reasons" class="checkbox-group-reasons checkbox" value="Por ser escuela pública"> Por ser escuela pública</label><br>
+                        <label><input type="checkbox" name="group-reasons" class="checkbox-group-reasons checkbox" value="Actividades deportivas"> Actividades deportivas</label><br>
+                        <label><input type="checkbox" name="group-reasons" class="checkbox-group-reasons checkbox" value="Espíritu de familia"> Espíritu de familia</label><br>
+                        <label><input type="checkbox" name="group-reasons" class="checkbox-group-reasons checkbox" value="Seguridad"> Seguridad</label><br>
+                    </div>
+                </div>
+                
+                <div class="form-input-container">
+                    <label for="group-areas" class="form-label">Indicar área(s) técnica(s) que le gustaría ingresar:<span class="form-span"> *</span></label>
+                    <div class="checkbox-group-areas-container">
+                        <label><input type="checkbox" name="group-areas" class="checkbox-group-areas checkbox" value="Desarrollo y Administración de Aplicaciones Informáticas"> Desarrollo y Administración de Aplicaciones Informáticas</label><br>
+                        <label><input type="checkbox" name="group-areas" class="checkbox-group-areas checkbox" value="Equipos Electrónicos"> Equipos Electrónicos</label><br>
+                        <label><input type="checkbox" name="group-areas" class="checkbox-group-areas checkbox" value="Equipos Electro médicos"> Equipos Electro médicos</label><br>
+                        <label><input type="checkbox" name="group-areas" class="checkbox-group-areas checkbox" value="Energía Renovable"> Energía Renovable</label><br>
+                        <label><input type="checkbox" name="group-areas" class="checkbox-group-areas checkbox" value="Gestión y Administración Tributaria"> Gestión y Administración Tributaria</label><br>
+                        <label><input type="checkbox" name="group-areas" class="checkbox-group-areas checkbox" value="Logística y Transporte"> Logística y Transporte</label><br>
+                        <label><input type="checkbox" name="group-areas" class="checkbox-group-areas checkbox" value="Multimedia y Gráfica"> Multimedia y Gráfica</label><br>
+                        <label><input type="checkbox" name="group-areas" class="checkbox-group-areas checkbox" value="Mecanizado"> Mecanizado</label><br>
+                        <label><input type="checkbox" name="group-areas" class="checkbox-group-areas checkbox" value="Refrigeración y Acondicionamiento de Aire"> Refrigeración y Acondicionamiento de Aire</label><br>
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <div class="btn-form-container">
+                <button type="submit" class="submit-btn-form">Enviar formulario</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- -- --------------- FORM SECTION END --------------- -- -->
+
+
+    <!-- -- --------------- FOOTER SECTION START --------------- -- -->
+
+    <section class="footer-section">
+        <footer class="footer">
+            <div class="footer-blocks footer-about">
+                <h3 class="footer-titles">Sobre Nosotros</h3>
+                <p class="footer-about-p">El IPIDBOSCO es una institución educativa del nivel medio en la modalidad Técnico Profesional, del sector oficial, dirigida por la Congregación Salesiana.</p>
+            </div>
+            <div class="footer-blocks footer-links">
+                <h3 class="footer-titles">Volver</h3>
+                <ul class="footer-ul">
+                    <li class="footer-li"><a href="#home" class="footer-a">Inicio</a></li>
+                    <li class="footer-li"><a href="#main-title" class="footer-a">Unirse</a></li>
+                    <li class="footer-li"><a href="#form" class="footer-a">Formulario</a></li>
+                </ul>
+            </div>
+            <div class="footer-blocks footer-social">
+                <h3 class="footer-titles footer-title-followus">Síguenos</h3>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/ipidbosco/" target="_blank" class="social-links"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="https://www.youtube.com/channel/UCMVLiZa9u1ligi2tlWMViqQ" target="_blank" class="social-links"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://www.facebook.com/IPIDBOSCO" target="_blank" class="social-links"><i class='bx bxl-facebook'></i></a>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <div class="footer-copyright">
+        <p>&copy; 2025 IPIDBOSCO. All Rights Reserved.</p>
+    </div>
+
+    <!-- -- --------------- FOOTER SECTION END --------------- -- -->
+<script src="app.js"></script>
+</body>
+</html>

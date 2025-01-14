@@ -1,0 +1,345 @@
+*{
+    font-family: 'Montserrat';
+    box-sizing: border-box;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: #334257;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+i{
+    color: #334257;
+}
+
+i:hover{
+    color: #EEEEEE;
+}
+
+body{
+    background-color: #33428a;
+    color: #33428a;
+}
+
+/* -- --------------- LAYOUT SECTION START --------------- -- */
+
+.layout-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.layout-img-container{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/media/img/layout-img.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 50px 10px #0009;
+}
+
+.layout-img-container::before{
+    position: absolute;
+    content: '';
+    background-color: #000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: .5;
+}
+
+.layout-text-container{
+    text-align: center;
+    position: absolute;
+    padding: 10px 25px 0;
+    border-radius: 10px;
+    transition: ease .4s;
+    user-select: none;
+}
+
+.layout-text{
+    color: #EEEEEE;
+}
+
+.big-text{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.small-text{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.down-row{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    background-color: #EEEEEE;
+    bottom: 0;
+    padding: 10px;
+    border-radius: 50%;
+    opacity: .9;
+    margin-bottom: 10px;
+    transition: all ease .3s;
+}
+
+.down-row:hover{
+    cursor: pointer;
+    background-color: #33428a;
+    i{
+        color: #EEEEEE;
+    }
+}
+
+/* -- --------------- LAYOUT SECTION END --------------- -- */
+
+/* -- --------------- MAIN SECTION START --------------- -- */
+
+#main-title{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 60px;
+}
+
+.sections{
+    background-color: #EEEEEE;
+    padding: 20px;
+    margin: 70px 50px 50px;
+    border-radius: 10px;
+}
+
+.main-title{
+    margin: 20px 0 10px;
+    text-align: center;
+    font-size: 2rem;
+    color: #33428a;
+}
+
+.steps-container{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    margin: 40px;
+}
+
+.eachstep{
+    padding: 15px;
+}
+
+.register-btn-link{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    border: none;
+}
+
+.login-btn-link, .submit-btn-form{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #33428a;
+    margin: 30px 0;
+    padding: 20px;
+    font-weight: 500;
+    transition: ease .4s;
+    margin: 0 auto;
+}
+
+.login-btn-link:hover, .submit-btn-form:hover{
+    background-color: #33428a;
+    cursor: pointer;
+    color: #EEEEEE;
+}
+
+/* -- --------------- MAIN SECTION END --------------- -- */
+
+/* -- --------------- FORM SECTION START --------------- -- */
+
+.form-section{
+    padding: 50px 100px;
+}
+
+.form{
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.form-header-section{
+    background-color: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 5px;
+    outline: 1px solid #ccc;
+}
+
+.form-header-title{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.form-header-text{
+    font-size: 1.2rem;
+}
+
+.form-group{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-group-title{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 40px 0 10px 0;
+    text-align: center;
+}
+
+.form-group-subtitle{
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 30px 0 0;
+}
+
+.form-input-container{
+    background-color: #fff;
+    width: 90%;
+    padding: 20px 30px;
+    margin: 20px 0;
+    outline: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-label{
+    font-weight: 600;
+    
+}
+
+.form-span{
+    font-weight: 900;
+    color: #c00;
+}
+
+.form-input{
+    display: flex;
+    margin: 20px 0 5px;
+    padding: 2px 5px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #bbb;
+    width: 50%;
+}
+
+#masculino, .radio-up{
+    margin-top: 20px;
+}
+
+#femenino, .radio-down{
+    margin-top: 10px;
+}
+
+#province-select{
+    user-select: none;
+}
+
+.checkbox-student-sacraments-container, .checkbox-group-reasons-container, .checkbox-group-areas-container{
+    margin-top: 20px;
+}
+
+.checkbox{
+    margin-bottom: 10px;
+}
+
+/* -- --------------- FORM SECTION END --------------- -- */
+
+
+/* -- --------------- FOOTER SECTION START --------------- -- */
+
+.footer-section{
+    background-color: #EEEEEE;
+    color: #33428a;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+.footer-blocks{
+    width: 30%;
+}
+
+.footer-titles{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.footer-about-p{
+    text-align: justify;
+}
+
+.footer-links{
+    padding: 0 40px;
+}
+
+.footer-a{
+    display: flex;
+    justify-content: center;
+    border: 1px solid #33428a;
+    margin: 10px 0;
+    padding: 5px;
+    font-weight: 500;
+    transition: ease .4s;
+}
+
+.footer-a:hover{
+    background-color: #33428a;
+    color: #EEEEEE;
+    cursor: pointer;
+}
+
+.footer-title-followus{
+    margin-bottom: 40px;
+}
+
+.social-links{
+    border: 1px solid #33428a;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+.social-links:hover{
+    transition: ease .4s;
+    background-color: #33428a;
+}
+
+.footer-copyright{
+    background-color: #33428a;
+    text-align: center;
+    padding: 10px;
+    p{
+        color: #EEEEEE;
+    }
+}
+
+/* -- --------------- FOOTER SECTION END --------------- -- */
